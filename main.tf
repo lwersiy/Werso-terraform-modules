@@ -15,5 +15,13 @@ module "ec2" {
   source = "./modules/ec2"
   instance_type = var.instance_type
   env = var.env
+  associate_public_ip_address = var.associate_public_ip_address
   
+}
+
+module "s3_bucket" {
+  source = "./modules/s3_bucket"
+  bucket = var.bucket
+  bucket-name        = var.bucket-name
+  env = var.env
 }
