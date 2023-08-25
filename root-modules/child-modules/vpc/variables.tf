@@ -27,3 +27,4 @@ variable "public_subnets_list" {
 variable "enable_nat_gateway" {
   type = bool
 }
+

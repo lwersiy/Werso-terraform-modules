@@ -10,3 +10,9 @@ variable "env" {
 variable "associate_public_ip_address" {
     type = bool
 }
+
+variable "subnet_id" {
+    default = ""
+    type = string
+}
+
