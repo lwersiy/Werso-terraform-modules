@@ -18,6 +18,7 @@ module "ec2" {
   env = var.env
   associate_public_ip_address = var.associate_public_ip_address
   subnet_id = module.vpc.publick_subnets_ids[0]
+  vpc_id = module.vpc.vpc_id
   
   
 
@@ -40,4 +41,9 @@ module "s3_bucket" {
   bucket = var.bucket
   bucket-name        = var.bucket-name
   env = var.env
+}
+
+
+module "iam" {
+  source = "./child-modules/iam"
 }

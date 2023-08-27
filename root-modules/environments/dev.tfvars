@@ -11,3 +11,5 @@ instance_type = "t2.micro"
 bucket = "wersobucket111"
 bucket-name = "mybucket"
 associate_public_ip_address = true
+
+
