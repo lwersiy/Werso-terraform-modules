@@ -25,14 +25,14 @@ module "ec2" {
 
 }
 
-terraform {
-  backend "s3" {
-    bucket = "werso-terraform-backend"
-    key    = "terraform-tf/terraform.tfstate"
-    region = "us-east-1"
-    # dynamodb_table = "terraform.lock.hcl"
-  }
-}
+# terraform {
+#   backend "s3" {
+#     bucket = "werso-terraform-backend"
+#     key    = "terraform-tf/terraform.tfstate"
+#     region = "us-east-1"
+#     # dynamodb_table = "terraform.lock.hcl"
+#   }
+# }
 
 
 
