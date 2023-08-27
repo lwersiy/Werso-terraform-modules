@@ -25,23 +25,23 @@ module "ec2" {
 
 }
 
-# terraform {
-#   backend "s3" {
-#     bucket = "werso-terraform-backend"
-#     key    = "terraform-tf/terraform.tfstate"
-#     region = "us-east-1"
-#     # dynamodb_table = "terraform.lock.hcl"
-#   }
-# }
-
-
-
-module "s3_bucket" {
-  source = "./child-modules/s3_bucket"
-  bucket = var.bucket
-  bucket-name        = var.bucket-name
-  env = var.env
+terraform {
+  backend "s3" {
+    bucket = "werso-terraform-backend"
+    key    = "terraform-tf/terraform.tfstate"
+    region = "us-east-1"
+    # dynamodb_table = "terraform.lock.hcl"
+  }
 }
+
+
+
+# module "s3_bucket" {
+#   source = "./child-modules/s3_bucket"
+#   bucket = var.bucket
+#   bucket-name        = var.bucket-name
+#   env = var.env
+# }
 
 
 module "iam" {
