@@ -12,12 +12,12 @@ module "vpc" {
 
   enable_nat_gateway = var.enable_nat_gateway
   enable_vpn_gateway = false
-
+  
 
 
 
   tags = {
-    Terraform   = "true"
+    Terraform = "true"
     Environment = var.env
   }
 }

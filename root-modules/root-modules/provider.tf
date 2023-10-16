@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "5.14.0"
+      version = "~> 5.0"
     }
 
     azurerm = {
@@ -15,15 +15,15 @@ terraform {
 
 provider "aws" {
   region  = "us-east-1"
-  profile = "default"
+  #profile = "default"
 }
 
-provider "azurerm" {
-  # Configuration options
-  features {
+# provider "azurerm" {
+#   # Configuration options
+#   features {
 
-  }
-}
+#   }
+# }
 
 # provider "github" {
 #   token = ""

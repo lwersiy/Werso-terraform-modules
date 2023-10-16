@@ -1,23 +1,23 @@
 variable "instance_type" {
-  type = string
-
+    type = string
+  
 }
 
 variable "env" {
-  type = string
+    type = string
 }
 
 variable "associate_public_ip_address" {
-  type = bool
+    type = bool
 }
 
 variable "subnet_id" {
-  default = ""
-  type    = string
+    default = ""
+    type = string
 }
 
 variable "vpc_id" {
   default = ""
-  type    = string
+  type = string
 }
 

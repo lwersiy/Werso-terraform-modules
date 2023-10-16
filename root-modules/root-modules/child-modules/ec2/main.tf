@@ -1,13 +1,13 @@
 resource "aws_instance" "web" {
-  ami                         = data.aws_ami.ubuntu.id
-  instance_type               = var.instance_type
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = var.instance_type
   associate_public_ip_address = var.associate_public_ip_address
-  subnet_id                   = var.subnet_id
-  security_groups             = [aws_security_group.werso-sg.id]
-
+  subnet_id = var.subnet_id
+  security_groups = [aws_security_group.werso-sg.id]
+ 
 
   tags = {
-    terraform   = true
+    terraform = true
     environment = var.env
   }
 }

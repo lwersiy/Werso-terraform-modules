@@ -30,19 +30,19 @@ variable "enable_nat_gateway" {
 
 variable "instance_type" {
   type = string
-
+  
 }
 
 variable "bucket" {
-  type = string
+    type = string
 }
 
 variable "bucket-name" {
-  type = string
+    type = string
 }
 
 variable "associate_public_ip_address" {
-  type = bool
+    type = bool
 }
 
 

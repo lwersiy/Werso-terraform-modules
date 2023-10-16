@@ -1,4 +1,4 @@
-# variables.tf outside the modules folder
+#modules/vpc/variables.tf
 
 variable "name" {
   type = string
@@ -27,23 +27,4 @@ variable "public_subnets_list" {
 variable "enable_nat_gateway" {
   type = bool
 }
-
-variable "instance_type" {
-  type = string
-
-}
-
-variable "bucket" {
-  type = string
-}
-
-variable "bucket-name" {
-  type = string
-}
-
-variable "associate_public_ip_address" {
-  type = bool
-}
-
-
 

@@ -1,11 +1,11 @@
 variable "bucket" {
-  type = string
+    type = string
 }
 
 variable "bucket-name" {
-  type = string
+    type = string
 }
 
 variable "env" {
-  type = string
+    type = string
 }
